@@ -54,8 +54,8 @@ int main(){
 		}
 	} while (order >= 1 && order <= 4);								// order <= 4 cuz ye need to press 5 to exit
 	
-	if(myRunes < total){
-		printf("M\'Lord... I could not deliver thy wish.\n");
+	if(myRunes < total){											// if & else to check whether i've enough rune
+		printf("M\'Lord... I could not deliver thy wish.\n");		// or not
 	}
 	else{
 		printf("-- Order Details --\n");
