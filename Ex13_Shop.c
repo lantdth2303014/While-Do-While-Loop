@@ -18,6 +18,7 @@ int main(){
 		printf("3. Erdtree's Favor (30,000 Runes)\n");
 		printf("4. Starscourge Heirloom (5,000 Runes)\n");
 		printf("5. Quit\n");
+		printf("\nYou have: 96,367 Runes.\n");
 		printf("Enter your choice (1-5): ");
 		scanf("%d", &order);
 		printf("\n");
