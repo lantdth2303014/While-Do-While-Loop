@@ -18,7 +18,7 @@ int main(){
 		printf("3. Erdtree's Favor (30,000 Runes)\n");
 		printf("4. Starscourge Heirloom (5,000 Runes)\n");
 		printf("5. Quit\n");
-		printf("\nYou have: 96,367 Runes.\n");
+		printf("\nYou have: %d Runes.\n", myRunes);
 		printf("Enter your choice (1-5): ");
 		scanf("%d", &order);
 		printf("\n");
@@ -28,24 +28,28 @@ int main(){
 			printf("You have bought Radagon's Soreseal\n\n");
 			total += 20000;											// increase total runes by price
 			count_radagon++;										// increase item bought count by 1
+			myRunes -= 20000;
 			break;
 			
 			case 2: 
 			printf("You have bought Shabriri Grapes\n\n");
 			total += 2000;											// increase total runes by price	
 			count_shabriri++;										// increase item bought count by 1
+			myRunes -= 2000;
 			break;
 			
 			case 3: 
 			printf("You have bought Erdtree's Favor\n\n");
 			total += 30000;											// increase total runes by price
 			count_erdtree++;										// increase item bought count by 1
+			myRunes -= 30000;
 			break;
 			
 			case 4: 
 			printf("You have bought Starscourge Heirloom\n\n");
 			total += 5000;											// increase total runes by price
 			count_starscourge++;									// increase item bought count by 1
+			myRunes -= 5000;
 			break;
 		}
 	} while (order >= 1 && order <= 4);								// order <= 4 cuz ye need to press 5 to exit
